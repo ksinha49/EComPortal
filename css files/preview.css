@@ -1,0 +1,44 @@
+
+a,a:visited{
+color:#06F;
+text-decoration:none;
+}
+h1{
+font-size:16px; 
+color:#B5FF00;
+font-weight:normal;
+margin:0;
+}
+.title{
+height:60px;
+}
+.panel{
+position:absolute;
+background-color:transparent;
+width:972px;
+min-height:100%;
+text-align:left;
+-moz-box-shadow: 0px 0px 3px #000;
+box-shadow: 0px 0px 3px #000;
+-webkit-box-shadow: 0px 0px 3px #000;
+}
+
+
+.description{
+position:relative;
+float:left;
+width:680px;
+height:100%;
+padding:10px 30px; 
+color:#FFF;
+font-size:14px;
+}
+select{
+margin-left: 46px;
+}
+.copyright{
+width:100%;
+text-align:right;
+font-size:11px;
+margin:15px 0;
+}

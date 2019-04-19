@@ -1,0 +1,190 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <script src="js%20files/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js%20files/js-image-slider.js" type="text/javascript"></script>
+    <link href="css%20files/search.css" rel="stylesheet" type="text/css" />
+    <link href="css%20files/menu.css" rel="stylesheet" type="text/css" />
+    <link href="css%20files/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <link href="css%20files/generic.css" rel="stylesheet" type="text/css" />
+    <script src="js%20files/modernizr-1.6.min_.js" type="text/javascript"></script>
+   
+      <script type="text/javascript">
+          $(function () {
+              if ($.browser.msie && $.browser.version.substr(0, 1) < 7) {
+                  $('li').has('ul').mouseover(function () {
+                      $(this).children('ul').show();
+                  }).mouseout(function () {
+                      $(this).children('ul').hide();
+                  })
+              }
+          });        
+    </script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script language="javascript" type="text/javascript">
+// <![CDATA[
+
+        function searchb_onclick() 
+        {
+
+       
+        }
+
+// ]]>
+    </script>
+</head>
+<body style="background-color:White; margin:0px 0px 0px 0px;width:1380px">
+         
+                  
+                    
+          
+    <form id="form1" runat="server" style="margin-top:0px; padding-top:0px; height: auto;width:1350px; position:relative">
+       
+   <div style="height:162px; margin-left: 0px; width: 100%; margin-top: 0px">
+    <div style="float:left;height:161px; width:229px; margin-top: 2px; background-color:transparent">
+     
+        <a href="Home.aspx">
+        <img alt="E-shop.com" src="images/Logo.jpg" 
+            
+            
+            
+            
+            
+            style="border-style: none; border-width: 0px; height: 153px; width: 217px; margin-left: 4px; text-decoration: none;" /></a><br />
+         
+    </div>
+    
+    
+    <div style="float:right;height:148px; width:401px; margin-top: 2px; background-color:transparent; margin-left: 9px; color: #000000;">
+     
+     
+        24 
+        x 7 Customer Support- <a href="contact.aspx" shape="default" 
+            style="color: #000000; text-decoration: none">Contact Us</a>&nbsp;|&nbsp;<a href="Login.aspx" shape="default" 
+            style="color: #000000; text-decoration: none">Login</a>&nbsp; |&nbsp;
+        <a href="signup.aspx" shape="default" style="color: #000000; text-decoration: none">Signup </a>
+       <br />
+        <br />
+        <br />
+        <asp:Image ID="Image8" runat="server" Height="57px" 
+            ImageUrl="~/images/footer/f1.jpg" Width="157px" />
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="66px" 
+            ImageUrl="~/images/view_cart_button.png" 
+            style="margin-left: 67px; margin-top: 16px" Width="154px" 
+            onclick="ImageButton1_Click" />
+        <br />
+        <br />
+        <br />
+        </div>
+    &nbsp;Your City:&nbsp;
+       <asp:Label ID="Label3" runat="server" ForeColor="#6600FF"></asp:Label>
+&nbsp;&nbsp;<a href="Welcome.aspx">Change</a><br />
+       <br />
+       <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" 
+           runat="server" Height="62px" 
+            ImageUrl="~/images/logout.jpg" onclick="ImageButton2_Click" 
+           Width="62px" Visible="False" />
+        <br />
+       <asp:Label ID="Label4" runat="server" Font-Underline="True" ForeColor="Fuchsia"></asp:Label>
+        <br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      <ul id="menu">
+      <li class="sale"><a href="Home.aspx">
+          <img src="images/home.png" 
+              
+              style="height: 35px; margin-left: 11px; width: 36px;border-style: none; border-width: 0px" /></a></li>
+	<li><a href="New Arrivals.aspx">New Arrivals</a></li>
+	<li>
+		<a href="Books_home.aspx">Books</a>
+		
+	<li>
+		<a href="#">Gadgets</a>
+		<ul>
+			<li>
+				<a href="Laptop2.aspx">Laptops & Accessories</a>			</li>
+            <li>
+						<a href="mobilehome.aspx">Mobiles</a>
+											
+					</li>
+            <li>
+						<a href="Camera2.aspx">Cameras</a>
+						
+													
+					</li>
+                    </ul>
+           	<li>
+				<a href="#">Fashion & Accesories</a>
+					<ul>
+							<li>
+                            <a href="Fashionmen.aspx">Men</a>						
+                            </li>
+							<li>
+								<a href="Fashionwomen.aspx">Women</a>
+							</li>
+							<li>
+								<a href="Fashionkid.aspx">Kids</a>
+							</li>
+						</ul>	
+</li>	
+<li class="sale"><img src="images/sale0.gif" />
+   <ul>
+      <li>
+      
+      </li>
+   </ul>
+	</li>
+    
+        
+ </ul>  
+ </li>      
+                  
+                    
+          
+    <div style="border-left: thin groove #808080; border-right: thin groove #808080; background-color:White; width: 1250px; height: auto; margin:10px 0px 50px 50px" >
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    <div class="div2" style="padding-right: 10px; padding-left: 10px; background-image:url(images/footer/footbg.jpg)">
+        <hr />
+        &nbsp;<asp:Label ID="Label1" runat="server" 
+            Text="Verified By:" ForeColor="#CCFFFF"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label2" runat="server" Text="Payment By:" ForeColor="#99FFCC"></asp:Label>
+        <br />
+        <asp:Image ID="Image1" runat="server" Height="47px" 
+            ImageUrl="~/images/footer/f2.jpg" style="margin-left: 0px" Width="83px" />
+        &nbsp;&nbsp;
+        <asp:Image ID="Image2" runat="server" Height="46px" Width="84px" 
+            ImageUrl="~/images/footer/f4.jpg" 
+            style="margin-left: 0px; margin-right: 0px; margin-top: 5px; padding-top:5px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Image ID="Image4" runat="server" height="47px" 
+            ImageUrl="~/images/footer/f6.jpg" width="85px" />
+&nbsp;<asp:Image ID="Image5" runat="server" height="47px" 
+            ImageUrl="~/images/footer/f7.jpg" width="85px" />
+&nbsp;
+        <asp:Image ID="Image6" runat="server" height="47px" 
+            ImageUrl="~/images/footer/f5.jpg" width="85px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        </div>
+    </form>
+    </body>
+    
+    </html>
+    
+    
+      
+    
