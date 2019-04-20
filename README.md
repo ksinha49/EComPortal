@@ -13,6 +13,6 @@ Add a new MS SQL local server and add the Database.mdf file to load the Applicat
 
 Run the Application from the localhost server from the module 
 ```sh
-$ Welcome.aspx
+Welcome.aspx
 ```
 
