@@ -1,5 +1,5 @@
 # Online E-Comm Portal
-This is a sample online portal with integrated C-Panel for Website Content Management 
+This is a sample online portal with integrated C-Panel for Website Content Management. Contains a database for user session and website content management. Add to card feature for user to enter multiple products for purchase and generate a bill on purchase.
 
 # Requirement
   - C#, ASP.net Framework
